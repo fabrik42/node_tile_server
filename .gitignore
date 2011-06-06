@@ -1,0 +1,4 @@
+.DS_Store
+src/settings.js
+src/public/index_mine.html
+node_modules/**/*
