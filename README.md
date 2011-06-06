@@ -8,7 +8,7 @@ At the moment it doesn't really render much and it probably will never compete w
 
 But you could use it e.g. to add a second tile layer to your map client and render some additional custom map features.
 
-![screenshot](http://dl.dropbox.com/u/1523969/screenshots/2011-06-06T23-06-02_screenshot1.jpg)
+![probably outdated screenshot](http://dl.dropbox.com/u/1523969/screenshots/2011-06-06T23-06-02_screenshot1.jpg)
 
 # Installation Guide
 
