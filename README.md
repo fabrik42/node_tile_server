@@ -1,6 +1,14 @@
 # node_tile_server
 
+This is an experimental [node.js](http://nodejs.org/) powered tile server that renders data from a postgres database with an [openstreetmap schema](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup).
 
+It works very well with [CloudMade's Leaflet](http://leaflet.cloudmade.com/) map client (example included).
+
+At the moment it doesn't really render much and it probably will never compete with other full sized map renderers like mapnik.
+
+But you could use it e.g. to add a second tile layer to your map client and render some additional custom map features.
+
+![screenshot](http://dl.dropbox.com/u/1523969/screenshots/2011-06-06T23-06-02_screenshot1.jpg)
 
 # Installation Guide
 
