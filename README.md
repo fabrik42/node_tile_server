@@ -12,6 +12,8 @@ It supports different tile modes:
 
 It works very well with [CloudMade's Leaflet](http://leaflet.cloudmade.com/) map client - [examples included](https://github.com/fabrik42/node_tile_server/tree/master/examples).
 
+But of course it also works with any other map client that supports overlays from a custom quad tile provider, like Google Maps or Bing Maps.
+
 ## Rendering a Heatmap
 
 ![probably outdated screenshot](http://dl.dropbox.com/u/1523969/node_tile_server/heatmap.jpg)
