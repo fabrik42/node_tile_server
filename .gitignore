@@ -1,5 +1,5 @@
 .DS_Store
 src/settings.*
 lib/settings.*
-src/public/*_mine.html
+examples/*_mine.html
 node_modules/**/*
