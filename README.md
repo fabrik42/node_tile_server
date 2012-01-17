@@ -1,16 +1,31 @@
 # node_tile_server
 
-This is an experimental [node.js](http://nodejs.org/) powered tile server that renders data from a postgres database with an [openstreetmap schema](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup).
+This is an experimental [node.js](http://nodejs.org) powered [Quad Tile](http://wiki.openstreetmap.org/wiki/QuadTiles) server written in [CoffeeScript](http://coffeescript.org) that renders geo data from a postgres database.
 
-It works very well with [CloudMade's Leaflet](http://leaflet.cloudmade.com/) map client (example included).
+Its purpose is to create map overlays in a convenient way using server-side [Canvas](https://developer.mozilla.org/en/Canvas_tutorial).
 
+It supports different tile modes:
+
+* Rendering a heatmap overlay based on [geo points](http://postgis.refractions.net/documentation/manual-1.5/ST_Point.html).
+
+* Rendering a very simple street map based on the [OpenStreetMap schema](http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup).
+
+It works very well with [CloudMade's Leaflet](http://leaflet.cloudmade.com/) map client - [examples included](https://github.com/fabrik42/node_tile_server/tree/master/examples).
+
+## Rendering a Heatmap
+
+![probably outdated screenshot](http://dl.dropbox.com/u/1523969/node_tile_server/heatmap.jpg)
+
+## Rendering OpenStreetMap Data
+
+![probably outdated screenshot](http://dl.dropbox.com/u/1523969/node_tile_server/osm_streets.jpg)
+
+# Setup Guide for OSM Data
+
+*Note on rendering OpenStreetMap data:* 
 At the moment it doesn't really render much and it probably will never compete with other full sized map renderers like mapnik.
 
 But you could use it e.g. to add a second tile layer to your map client and render some additional custom map features.
-
-![probably outdated screenshot](http://dl.dropbox.com/u/1523969/screenshots/2011-06-06T23-06-02_screenshot1.jpg)
-
-# Installation Guide
 
 ## Requirements for OS X
 
@@ -64,12 +79,16 @@ See: http://wiki.openstreetmap.org/wiki/Osmosis/PostGIS_Setup
 
 ### Create database config file
 
-Create the file `src/settings.js`, based on `src/settings_example.js`
+Create the file `src/settings.coffee`, based on `src/settings_example.coffee`
+
+### Build the lib
+
+`cake build`
 
 ### Run the server
 
-`node src/app.js`
+`node lib/server.js`
 
 ### Point your browser to
 
-`http://localhost:3000`
+`http://localhost:3000/osm_streets.html`
