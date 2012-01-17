@@ -1,8 +1,8 @@
 # node_tile_server
 
-This is an experimental [node.js](http://nodejs.org) powered [Quad Tile](http://wiki.openstreetmap.org/wiki/QuadTiles) server written in [CoffeeScript](http://coffeescript.org) that renders geo data from a postgres database.
+This is an experimental [node.js](http://nodejs.org) powered [Quad Tile](http://wiki.openstreetmap.org/wiki/QuadTiles) server written in [CoffeeScript](http://coffeescript.org) to render geo data from a postgres database.
 
-Its purpose is to create map overlays in a convenient way using server-side [Canvas](https://developer.mozilla.org/en/Canvas_tutorial).
+Its purpose is to create map overlays in a convenient way using a [server-side](https://github.com/LearnBoost/node-canvas) version of the HTML5 [Canvas](https://developer.mozilla.org/en/Canvas_tutorial) element.
 
 It supports different tile modes:
 
