@@ -22,6 +22,10 @@ But of course it also works with any other map client that supports overlays fro
 
 ![probably outdated screenshot](http://dl.dropbox.com/u/1523969/node_tile_server/osm_streets.jpg)
 
+## Super Sexy Heatmap with custom Cloudmade Tiles
+
+![niceeee](http://dl.dropbox.com/u/1523969/node_tile_server/heatmap_sexy.jpg)
+
 # Setup Guide for OSM Data
 
 *Note on rendering OpenStreetMap data:* 
